@@ -21,6 +21,9 @@ contract SimpleStorage {
         string name;
     }
 
+    People[] public people;
+    Pets[2] public pets;
+
 
 
 
