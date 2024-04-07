@@ -24,7 +24,10 @@ contract SimpleStorage {
     People[] public people;
     Pets[2] public pets;
 
-
+    function addPerson (string memory _name, uint256 _favoriteNumber) public{
+        People memory newPerson = People(_favoriteNumber, _name);
+        people.push(newPerson);
+    }
 
 
 
